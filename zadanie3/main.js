@@ -1,7 +1,17 @@
-let money = prompt ("Ваш бюджет на месяц",''),
-     time = prompt ("Введите дату в формате YYYY-MM-DD",'');
+var money,time;
+function start(){
+ money=prompt ("Ваш бюджет на месяц",'');
+ time=prompt ("Введите дату в формате YYYY-MM-DD",'');
+     while (isNaN(money) || money === "" ||  money===null) {
+             prompt ("Ваш бюджет на месяц",'');
 
-let appData={
+        } 
+        
+}
+        start();
+
+    
+var appData={
     budget: money,
     expenses: {},
     optionalExpenses: {},
@@ -10,11 +20,22 @@ let appData={
     saving: false
 
 };
-for (let i=0; i<2; i++){
-    let a=prompt ("Введите обязательную статью расходов в этом месяце",''),
+for (var i=0; i<2; i++){
+    var a=prompt ("Введите обязательную статью расходов в этом месяце",''),
         b=prompt("Во сколько обойдется?",'');
-        appData.expenses[a] =b;
-}
+        if ((typeof(a))==='string'&& (typeof(a))!=null && (typeof(b))!=null && a!='' && b!='' && a.length<50) {
+        
+                console.log('done'); 
+                appData.expenses[a] =b;
+                }
+        else i --;
+              
+        
+        }
+
+        appData.moneyPerDay = appData.budget / 30;
+        alert("Ваш ежедневный бюджет"+appData.moneyPerDay);
+       
 
 
-   alert(appData.budjet/30);
+   
