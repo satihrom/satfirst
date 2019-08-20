@@ -1,0 +1,21 @@
+
+/*слайдер*/
+.slider{
+   
+    position: relative;
+    border: 4px solid #caccd1;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.line{
+    position: relative;
+    
+    overflow: hidden;
+    left: 0;
+    transition: all ease 1s;
+
+}
+.slide{
+    float: left;
+    background: red;
+}   
