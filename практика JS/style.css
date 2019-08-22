@@ -1,7 +1,7 @@
-
-/*слайдер*/
+/*стили для слайдера*/
 .slider{
-   
+    
+   height:800px;
     position: relative;
     border: 4px solid #caccd1;
     margin: 100px auto;
@@ -9,6 +9,7 @@
 }
 .line{
     position: relative;
+    height: 800px;
     
     overflow: hidden;
     left: 0;
@@ -17,5 +18,31 @@
 }
 .slide{
     float: left;
-    background: red;
+    
 }   
+
+/*стили для замкнутого слайдера*/
+#sld{
+    width: 256px;
+    height: 256px;
+    border: 4px solid#c0c0c0;
+    margin: auto;
+    position: relative;
+    
+}
+.slide-single{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    transition: all ease 1s;
+    left: 0;
+    top: 0;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 60px auto 40px auto;
+
+
+}
