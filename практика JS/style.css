@@ -1,27 +1,140 @@
-/*стили для слайдера*/
-.slider{
+/*стили для анимированного меню*/
+.larisa{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.hamburg{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    box-shadow: none;
+    cursor: pointer;
     
-   height:800px;
+}
+.hamburg:focus{
+    outline: none;
+}
+.hamburg span{
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: #fff;
+}
+.hamburg span::before, .hamburg span::after{
+    position: absolute;
+    display:block;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background:#fff;
+    content: "";
+}
+.hamburg span::before{
+    top: -20px;
+}
+.hamburg span::after{
+    bottom: -20px;
+}
+.hamburg-line{
+    background: #cb0032;
+}
+.hamburg-line span{
+    transition: background 0s 0.3s;
+
+}
+.hamburg-line span::before, .hamburg-line span::after{
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+.hamburg-line span::before{
+    transition-property: top, transform;
+}
+.hamburg-line span::after{
+    transition-property: bottom, transform;
+}
+.hamburg-line.is-active{
+    background: greenyellow;
+}
+.hamburg-line.is-active span{
+    background: none;
+}
+.hamburg-line.is-active span::before{
+    top:0;
+    transform: rotate(-45deg);
+}
+.hamburg-line.is-active span::after{
+    bottom:0;
+    transform: rotate(45deg);
+}
+
+.hamburg-line.is-active span::before, .hamburg-line.is-active span::after{
+    transition-delay: 0s, 0.3s;
+}
+#menu{
+    width: 300px;
+    margin-left: -204px;
+    background: rgb(133, 228, 145);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease 1s;
+    z-index: 9999;
+}
+#menu.nav-active{
+    margin-left: 0;
+}
+.body-active{
+    margin-left: 0;
+}
+.container{
+    width: 80%;
+    min-width: 1000px;
+    margin:30px auto;
+    
+}
+/*стили для слайдера*//*
+.slider{
+height: 500px;
+width: 500px;
+    
     position: relative;
     border: 4px solid #caccd1;
     margin: 100px auto;
     overflow: hidden;
 }
-.line{
+.line {
     position: relative;
-    height: 800px;
+
+
+
     
     overflow: hidden;
     left: 0;
+    
+    
     transition: all ease 1s;
 
 }
-.slide{
+.slide {
     float: left;
+
+    
     
 }   
 
-/*стили для замкнутого слайдера*/
+/*стили для замкнутого слайдера*//*
 #sld{
     width: 256px;
     height: 256px;
@@ -46,3 +159,26 @@ h1{
 
 
 }
+h5{
+    text-align: center;
+    font-family: Geneva, sans-serif;
+    font-size: 24px;
+    color:green;
+
+
+}
+footer{height: 15vh;
+
+background: rgb(17, 14, 189);
+
+width: 100%;
+
+
+
+border: 10px;
+border-color: rgb(199, 64, 64);
+
+position: relative;
+
+}
+

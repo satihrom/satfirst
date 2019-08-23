@@ -1,16 +1,17 @@
 
-/*создание слайдера*/
-
-
+/*
 let line=document.querySelector('.line');
 let slides=document.querySelectorAll('.slide');
+console.log(slides);
+
 let sliderWidth=document.querySelector('.slider').offsetWidth;
+console.log(sliderWidth);
 let widthArray = [0];
 let lineWidth = 0;
 let offset=0;
 let step=0;
 let tostop=0;
-//var a = document.getElementById('line');
+
 
 
 for (let i=0; i<slides.length; i++){
@@ -18,10 +19,11 @@ for (let i=0; i<slides.length; i++){
     lineWidth += slides[i].offsetWidth;
     
 }
+console.log(widthArray);
 line.style.width = lineWidth+'px';
 
 
-function slidestep (){
+function slidestep(){
     tostop=lineWidth-sliderWidth-(offset+widthArray[step]);
     if (tostop>=0){offset=offset+widthArray[step];
     line.style.left=-offset+'px';
@@ -42,7 +44,7 @@ function slidestep (){
 }
 
 
-/*создание замкнутого слайдера*/
+/*создание замкнутого слайдера*//*
 let slids=document.querySelectorAll('.slide-single');
 console.log(slids);
 let slid=[];
@@ -83,3 +85,18 @@ function left(){
 }
 draw();draw();
 sld.onclick=left;
+/*создание анимационного меню*/
+document.querySelector('.hamburg').addEventListener('click',function(e){
+    e.preventDefault();
+   // this.classList.toggle('is-active');
+   if (this.classList.contains('is-active')){
+    this.classList.remove('is-active');
+    document.querySelector('menu').classList.remove('nav-active');
+    document.body.classList.remove('body-active');
+   }
+   else{
+       this.classList.add('is-active');
+       document.querySelector('menu').classList.add('nav-active');
+       document.body.classList.add('body-active');
+   }
+})
