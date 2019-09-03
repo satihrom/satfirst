@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VUE JS</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-on:input="changeName">
+        <h1>String: {{name}}</h1>
+        <h1>Sum: {{10+60}}</h1>
+        <h1>Номер:{{number}}</h1>
+        <h1>Method:{{sayHello()}}</h1>
+        <h1>If statement:{{isOK ? "i am OK !" : "i am not OK !!"}}</h1>
+        <h1>Function:{{string.split("").reverse().join("")}}</h1>
+        <h2  >
+            <a v-bind:href="url">google</a>
+        </h2>
+        <h2 v-html="link"></h2>
+    </div>
+ <script src="main.JS"></script>   
+</body>
+</html>
+

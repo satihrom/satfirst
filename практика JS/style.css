@@ -1,9 +1,10 @@
 /*стили для анимированного меню*/
 .larisa{
-    margin: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    transition: all ease 1s;   
 }
+
 .hamburg{
     display: block;
     position: absolute;
@@ -90,21 +91,23 @@
     top: 0;
     bottom: 0;
     transition: all ease 1s;
-    z-index: 9999;
+    
 }
 #menu.nav-active{
     margin-left: 0;
 }
 .body-active{
-    margin-left: 0;
+    margin-left: 300px;
 }
 .container{
     width: 80%;
-    min-width: 1000px;
-    margin:30px auto;
+    min-width: 800px;
+   margin:20px auto;
     
+
+
 }
-/*стили для слайдера*//*
+/*стили для слайдера*/
 .slider{
 height: 500px;
 width: 500px;
@@ -134,7 +137,7 @@ width: 500px;
     
 }   
 
-/*стили для замкнутого слайдера*//*
+/*стили для замкнутого слайдера*/
 #sld{
     width: 256px;
     height: 256px;
@@ -167,7 +170,8 @@ h5{
 
 
 }
-footer{height: 15vh;
+footer{
+height: 15vh;
 
 background: rgb(17, 14, 189);
 
