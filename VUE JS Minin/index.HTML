@@ -20,6 +20,13 @@
             <a v-bind:href="url">google</a>
         </h2>
         <h2 v-html="link"></h2>
+        <h2>{{title}}={{counter}}</h2>
+        <button v-on:Click="riceCounter(1,'изменено на 1',$event)">Увеличить на 1</button>
+        <button v-on:Click="riceCounter(5,'изменено на 5',$event)">Увеличить на 5</button>
+        <button v-on:Click="riceCounter(10,'изменено на 10',$event)">Увеличить на 10</button>
+        <hr>
+        <h2 v-on:mouseover="onHover">Счетчик={{counter2}}</h2>
+        <button v-on:Click="counter2--">Уменьшить</button>
     </div>
  <script src="main.JS"></script>   
 </body>
