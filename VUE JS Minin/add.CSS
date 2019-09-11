@@ -1,0 +1,21 @@
+footer{
+
+height: 15vh;
+
+background: rgb(15, 231, 62);
+
+width: 100%;
+
+
+
+padding: 20px 0;
+
+border-bottom: 3px solid rgb(21, 12, 53);
+
+border-right: 3px solid rgb(21, 12, 53);
+
+border-left: 3px solid rgb(21, 12, 53);
+
+position: relative;
+
+}
