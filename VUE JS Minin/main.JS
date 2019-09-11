@@ -36,4 +36,4 @@ this.name=event.target.value;
         }
 
     }
-})
+});
