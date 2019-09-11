@@ -41,7 +41,12 @@ this.name=event.target.value;
         handleMouseMove(event){
            this.x=event.clientX;
            this.y=event.clientY;
+        },
+        /*для урока 9*/
+        AlertValue(event){
+            alert(event.target.value);
         }
+
 
     }
 });
