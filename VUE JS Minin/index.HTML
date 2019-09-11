@@ -14,7 +14,7 @@
         <h1>String: {{name}}</h1>
         <h1>Sum: {{10+60}}</h1>
         <h1>Номер:{{number}}</h1>
-        <h1>Method:{{sayHello()}}</h1>
+        <h1>Method:{{sayHello()}}</h1> 
         <h1>If statement:{{isOK ? "i am OK !" : "i am not OK !!"}}</h1>
         <h1>Function:{{string.split("").reverse().join("")}}</h1>
         <h2 align='center'>Урок 5 Вывод HTML кода</h2>
@@ -36,6 +36,7 @@
         </h2>
         <h2 v-on:mousemove="handleMouseMove">
             X: {{x }} / Y {{y }}
+            <span v-on:mousemove.stop=' '>Не изменять</span>
         </h2>
     </div>
  <script src="main.JS"></script>   
