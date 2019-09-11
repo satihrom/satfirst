@@ -12,6 +12,7 @@ new Vue({
         link: '<a href="http://google.com">Google</a>'
     },
     methods:{
+         
         changeName:function(event){
 this.name=event.target.value;
         },

@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="app">
+        <h2 align='center'>урок 3,4 интерполяция и динамические атрибуты</h2>
         <input type="text" v-on:input="changeName">
         <h1>String: {{name}}</h1>
         <h1>Sum: {{10+60}}</h1>
@@ -16,10 +17,12 @@
         <h1>Method:{{sayHello()}}</h1>
         <h1>If statement:{{isOK ? "i am OK !" : "i am not OK !!"}}</h1>
         <h1>Function:{{string.split("").reverse().join("")}}</h1>
+        <h2 align='center'>Урок 5 Вывод HTML кода</h2>
         <h2  >
             <a v-bind:href="url">google</a>
         </h2>
         <h2 v-html="link"></h2>
+        <h2 align='center'>Урок 6,7 Добавление событий ,передача параметров в метод</h2>
         <h2>{{title}}={{counter}}</h2>
         <button v-on:Click="riceCounter(1,'изменено на 1',$event)">Увеличить на 1</button>
         <button v-on:Click="riceCounter(5,'изменено на 5',$event)">Увеличить на 5</button>
@@ -27,6 +30,10 @@
         <hr>
         <h2 v-on:mouseover="onHover">Счетчик={{counter2}}</h2>
         <button v-on:Click="counter2--">Уменьшить</button>
+        <h2 align='center'>Урок 8 модификаторы событий </h2>
+        <h2>
+            <a href='http://google.com' target='_blank' v-on:Click.prevent=''>Google</a>
+        </h2>
     </div>
  <script src="main.JS"></script>   
 </body>
