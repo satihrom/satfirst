@@ -6,6 +6,8 @@ new Vue({
         isOK:true,
         counter:0,
         counter2:0,
+        x:0,
+        y:0,
         title:"Счетчик",
         string:"My name is Ivan",
         url:"http://google.com",
@@ -34,6 +36,11 @@ this.name=event.target.value;
         },
         onHover(event){
             event.target.style.color="red";
+        },
+        /*для урока 8*/
+        handleMouseMove(event){
+           this.x=event.clientX;
+           this.y=event.clientY;
         }
 
     }
