@@ -6,6 +6,7 @@ new Vue({
         isOK:true,
         counter:0,
         counter2:0,
+        counter3:0,
         x:0,
         y:0,
         title:"Счетчик",
