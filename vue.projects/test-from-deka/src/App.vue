@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TodoList :todos='todos' />
+    <TodoList :todos='todos'@delete-todo='deleteTodo' />
      
     
   </div>
@@ -14,11 +14,16 @@ export default {
   name: 'app',
   data(){
       return{
-        todos['Ремонт']
+        todos:['Ремонт','Ужин']
       }
   },
   components:{
     TodoList
+  },
+  methods:{
+   deleteTodo(index){
+     this.todos.splice(index,1)
+   }
   }
 }
 </script>
