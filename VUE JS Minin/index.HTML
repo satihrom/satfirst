@@ -54,7 +54,10 @@
         </h2>
         <button @Click='counter3++'>Больше</button>
         <h2 align='center'>Урок 11 Модель для работы с формами</h2>
-        <input type="text">
+        <input type="text"v-model='inputValue'>
+        <h2>
+            {{inputValue}}
+        </h2>
 
     </div>
     <footer>
