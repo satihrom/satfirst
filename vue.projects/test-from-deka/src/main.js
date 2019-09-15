@@ -4,8 +4,8 @@ import {i,a} from './test'
 
 
 Vue.config.productionTip = false
-console.log(`Переменная i:${i},и а:${a}`);
 
+console.log(typeof App); 
 new Vue({
   render: h => h(App),
 }).$mount('#app')
