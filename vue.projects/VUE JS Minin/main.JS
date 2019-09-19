@@ -18,6 +18,15 @@ new Vue({
         isActive:false /*для урока 12*/,
         color:''/*для урока 12 ч2*/
     },
+    computed:{
+        getCssClasses(){
+            return{
+                'red':this.isActive,
+                'green':!this.isActive
+            };
+        }
+    },
+
     methods:{
          
         changeName:function(event){

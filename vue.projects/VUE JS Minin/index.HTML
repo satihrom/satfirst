@@ -62,7 +62,7 @@
         <h2 align='center'>Урок 12 Работа с CSS классами</h2>
         <div class='circle CenterBlock' 
              @Click='isActive=!isActive'
-             :class="{'red':isActive,'green':!isActive}" 
+             :class="getCssClasses" 
              ></div>
              <div class="circle CenterBlock":class='color'></div>
             <center><input type="text" v-model='color'></center>
