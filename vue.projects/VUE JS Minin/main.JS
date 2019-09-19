@@ -1,6 +1,7 @@
 new Vue({
     el:"#app",
     data:{
+
         name:"Vue !",
         number:100,
         isOK:true,
@@ -13,7 +14,8 @@ new Vue({
         title:"Счетчик",
         string:"My name is Ivan",
         url:"http://google.com",
-        link: '<a href="http://google.com">Google</a>'
+        link: '<a href="http://google.com">Google</a>',
+        isActive:false /*для урока 12*/
     },
     methods:{
          

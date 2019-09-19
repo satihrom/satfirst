@@ -1,17 +1,24 @@
 
-    .circle{
-        width: 100px;
-        height: 100px;
+    .circle{/*класс для 12 урока*/
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 3px solid black;
         display: inline-block;
         margin:40px;
         
 
     }
-    .red{background: red;}
-    .blue{background: blue;}
-    .green{background: green;}
+    .red{background: red;}/*для 12 урока*/
+    .blue{background: blue;}/*12*/
+    .green{background: green;}/*12*/
+
+
+    .CenterBlock{
+        display:block; /*Делаем блочный элемент*/
+        margin:auto;/*Задаем автоматический внешний отступ*/
+        
+        }
 footer{
 
 height: 15vh;
