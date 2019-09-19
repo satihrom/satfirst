@@ -66,6 +66,8 @@
              ></div>
              <div class="circle CenterBlock":class='color'></div>
             <center><input type="text" v-model='color'></center>
+
+            <div class="circle CenterBlock":class="[color,{'red':isActive}]"></div>
         
     </div>
     <footer>
