@@ -15,7 +15,8 @@ new Vue({
         string:"My name is Ivan",
         url:"http://google.com",
         link: '<a href="http://google.com">Google</a>',
-        isActive:false /*для урока 12*/
+        isActive:false /*для урока 12*/,
+        color:''/*для урока 12 ч2*/
     },
     methods:{
          
