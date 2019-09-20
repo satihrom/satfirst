@@ -20,6 +20,12 @@ new Vue({
         color:''/*для урока 12 ч2*/
     },
     computed:{
+        circleClasses(){
+             return{
+                'background':this.color,
+                'height':this.height + 'px'
+             };
+        },
         getCssClasses(){
             return{
                 'red':this.isActive,
