@@ -9,6 +9,7 @@ new Vue({
         counter2:0,
         counter3:0,
         inputValue:'  ',
+        height:100,
         x:0,
         y:0,
         title:"Счетчик",
