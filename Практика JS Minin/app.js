@@ -1,5 +1,5 @@
-const slider=document.querySelector('#grayscale');
-slider.addEventListener('change',onChange);
+const slider=document.query(' #grayscale ');
+slider.addEventListener('change', onChange);
 function onChange(){
- console.log(slider.Value);   
+ console.log(slider. Value);  
 }
