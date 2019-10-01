@@ -1,7 +1,7 @@
 new Vue({
     el:"#app",
     data:{
-
+        isVisible:true,
         name:"Vue !",
         number:100,
         isOK:true,
