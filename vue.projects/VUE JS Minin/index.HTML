@@ -83,6 +83,17 @@
            <h2 align='center'v-if="isVisible"> Я видим!</h2>
            <h2 align='center'v-if="!isVisible">Нет я не видим!</h2>
           <center> <button @click="isVisible=!isVisible">Toggle</button></center>
+          <hr style="height:3px;color:#333;background-color:#333;"/>
+          <h2 align='center'v-if="type==='a'">A</h2>
+          <h2 align='center'v-if="type==='b'">B</h2>
+          <h2 align='center'v-if="type==='c'">C</h2>
+          <h2 align='center'v-else>неизвестное значение</h2>
+          <hr>
+          <input type="text" v-model='type'>
+
+
+
+
             
 
         

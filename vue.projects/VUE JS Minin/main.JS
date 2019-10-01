@@ -1,6 +1,7 @@
 new Vue({
     el:"#app",
     data:{
+        type:'a',
         isVisible:true,
         name:"Vue !",
         number:100,
