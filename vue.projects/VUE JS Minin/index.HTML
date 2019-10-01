@@ -89,7 +89,16 @@
           <h2 align='center'v-else-if="type==='c'">C</h2>
           <h2 align='center'v-else>нет значения</h2>
           <hr>
-          <input type="text" v-model='type'>
+         <center> <input type="text" v-model='type'></center>
+          <template v-if='isVisible'>
+              <h2 align='center'>Мой заголовок isVisible=true</h2>
+              <p align='center'>какой то текст</p>
+          </template>
+          <template v-else='isVisible'>
+              <h2 align='center'>Мой заголовок isVisible=falce</h2>
+              <p align='center'>какой-то текст</p>
+          </template>
+          <hr style="height:3px;color:#333;background-color:#333;"/>
 
 
 
