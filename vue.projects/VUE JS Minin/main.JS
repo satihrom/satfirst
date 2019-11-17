@@ -1,6 +1,12 @@
 new Vue({
     el:"#app",
     data:{
+        people:[
+            'Vlad',
+            'Max',
+            'Elena',
+            'Konstantins'
+        ],
         type:'a',
         isVisible:true,
         name:"Vue !",
