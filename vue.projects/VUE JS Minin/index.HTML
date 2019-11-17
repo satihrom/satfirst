@@ -101,7 +101,7 @@
           <hr style="height:3px;color:#333;background-color:#333;"/>
           <h2 align="center"> Урок 16 Работа со списками </h2>
           <ul>
-              <li v-for="(person,index) in people">{{index+1}} {{ person }}</li>
+              <li v-for="(person,index) of people">{{index+1}} {{ person }}</li>
           </ul>
           <ul>
               <li v-for="(person,dex) in peoples">{{dex+1}} {{person.name}}<b> - {{person.age}} лет</b></li>
