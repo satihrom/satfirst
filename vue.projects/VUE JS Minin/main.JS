@@ -13,6 +13,11 @@ new Vue({
             {name:'Elena',age:32},
             {name:'konstantins',age:36}
         ],
+        ident:{
+            name:'Olga',
+            age:26,
+            job:'Frontend'
+        },
         type:'a',
         isVisible:true,
         name:"Vue !",
