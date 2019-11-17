@@ -12,7 +12,7 @@ new Vue({
             {name:'Max',age:30},
             {name:'Elena',age:32},
             {name:'konstantins',age:36}
-        ]
+        ],
         type:'a',
         isVisible:true,
         name:"Vue !",
