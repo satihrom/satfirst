@@ -1,6 +1,7 @@
 new Vue({
     el:"#app",
     data:{
+        counter:0,
         people:[
             'Vlad',
             'Max',
@@ -53,6 +54,13 @@ new Vue({
     },
 
     methods:{
+        Add: function(){
+        this.counter++;
+        },
+        Sub: function(){
+        this.counter--;
+        },
+
          
         changeName:function(event){
 this.name=event.target.value;
